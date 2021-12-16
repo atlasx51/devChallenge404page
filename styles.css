@@ -3,31 +3,38 @@ html, body {
     width: 100%;
     display: flex;
     min-height: 100vh;
-    flex-flow: wrap;
+  
     text-align: center;
 }
-
+.container {
+    display:flex;
+    flex-direction: column;
+   
+ 
+}
 
 header {
-    position: absolute;
+
     width: 100vw;
-    height: 50vh;
+    height: 5vh;
     left: 24px;
     top: 20px;
 
-    font-family: Inconsolata,;
+    font-family: Inconsolata;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 25px;
     letter-spacing: -0.08em;
     text-transform: uppercase;
-    display: inline-block;
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
     
 
     color: #333333;
-    ;
+    
 
 }
 
@@ -36,10 +43,10 @@ main {
     font-family: Space mono;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+   
 }
 
-main h1 {
+h1 {
     display: flex;
     flex-direction: column;
     font-family: Space mono;
@@ -54,16 +61,30 @@ main h1 {
     font-size: 48px;
     line-height: 71px;
     letter-spacing: -0.035em;
-
-    align-items: center;
+    text-align: left;
+   
+    align-content: space-around;
 }
 
-main h3 {
+ h3 {
     display:flex;
+   
     flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-end;
+
+    font-family: Space Mono;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color:#4f4f4f;
+    line-height: 26.66px;
+    letter-spacing: -3.5%;
+    text-align:left;
+    ;
 }
 
-.image{
+.image {
     
     left: 11.73%;
     right: 11.78%;
@@ -72,24 +93,50 @@ main h3 {
     
     display: flex;
     flex-direction: column;
+   
     top: 10vh;
     margin: auto;
     width:290px;
     height: 220px;
-    align-self: center;
-    justify-content: center;
-    
+  
 }
 footer {
     margin-top: auto;
+    width: 100%;
+    display: flex;
+    height: 5vh;
+    justify-content: center;
+    align-content: space-around;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17.07px;
+    text-align: center;
+    color: #BDBDBD;
 }
 button {
-    position:absolute;
+
+    display: flex;
+   
     width: 216px;
     height: 68px;
     left: 24px;
     top: 726px;
-    color:white;
+    color:#ffffff;
+    
+    font-family: Space Mono;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    align-items: center;
+    align-content: space-between;
+    text-align: center;
+    flex-direction: center;
+
+
 
     background: #333333;
 }
